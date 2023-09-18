@@ -41,6 +41,6 @@ jobs:
     - name: Update kube config
       run: aws eks update-kubeconfig --name ekscluster
 
-    - name: Deploy nodejs helm chart to EKS
+    - name: Deploy nodejs helm chart to EKS1
       run: |
        helm install nodeapp ./node-app
